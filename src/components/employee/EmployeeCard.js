@@ -11,7 +11,7 @@ const EmployeeCard = () => {
             </h3>
             <p>Job: Middle Managment</p>
         </div>
-    )
-}
+    );
+};
 
 export default EmployeeCard;

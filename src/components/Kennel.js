@@ -2,8 +2,12 @@ import React from "react";
 import "./Kennel.css";
 import AnimalCard from "./animal/AnimalCard";
 import EmployeeCard from "./employee/EmployeeCard";
-// import LocationCard from "./location/LocationCard";
-// import OwnerCard from "./owner/OwnerCard";
+import LocationCard from "./location/LocationCard";
+import OwnerCard from "./owner/OwnerCard";
+
+
+
+
 
 const Kennel = () => {
     return (
@@ -26,13 +30,14 @@ const Kennel = () => {
                 <AnimalCard/>
                 <AnimalCard/>
             </div>
-            {/* <div>
+            <div>
                 <LocationCard/>
             </div>
             <div>
                 <OwnerCard/>
-            </div> */}
+            </div>
             <div>
+                <EmployeeCard/>
                 <EmployeeCard/>
             </div>
         </div>

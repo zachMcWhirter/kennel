@@ -7,11 +7,11 @@ const LocationCard = () => {
                 <img src={require("./location.jpg")} alt="Worker" />
             </picture>
             <h3>
-                Name: <span className="card-locationName">Lumbergh</span>
+                Name: <span className="card-locationName">Downtown</span>
             </h3>
             <p>City: Central City</p>
         </div>
-    )
-}
+    );
+};
 
-// export default LocationCard;
+export default LocationCard;

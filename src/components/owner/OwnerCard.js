@@ -7,10 +7,10 @@ const OwnerCard = () => {
                 <img src={require("./owner.jpg")} alt="Owner" />
             </picture>
             <h3>
-                Name: <span className="card-ownerName">Boss Hog</span>
+                Name: <span className="card-ownerName">Sam Jackson</span>
             </h3>
         </div>
     )
 }
 
-// export default OwnerCard;
+export default OwnerCard;
