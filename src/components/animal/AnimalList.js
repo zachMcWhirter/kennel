@@ -4,7 +4,6 @@ import AnimalCard from './AnimalCard';
 
 //This module will initiate the AnimalManager getAll() call, hold on to the returned data, and then render the <AnimalCard /> component for each animal.
 
-
 const AnimalList = () => {
     // The initial state is an empty array
     const [animals, setAnimals] = useState([]);
