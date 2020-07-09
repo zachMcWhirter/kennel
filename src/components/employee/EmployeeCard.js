@@ -1,15 +1,18 @@
 import React from "react";
+import "./Employee.css"
 
-const EmployeeCard = () => {
+const EmployeeCard = props => {
     return (
-        <div className="card-content">
-            <picture>
-                <img src={require("./worker.jpg")} alt="Worker" />
-            </picture>
-            <h3>
-                Name: <span className="card-employeeName">Lumbergh</span>
-            </h3>
-            <p>Job: Middle Managment</p>
+        <div className="card">
+            <div className="card-content">
+                <picture>
+                    <img src={require("./worker.jpg")} alt="Worker" />
+                </picture>
+                <h3>
+                    Name: <span className="card-employeeName">{props.employee.name}</span>
+                </h3>
+                <p>Job: {props.employee.job}</p>
+            </div>
         </div>
     );
 };
