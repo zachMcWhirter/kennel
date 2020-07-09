@@ -35,10 +35,19 @@ address {
   margin: 0 0 1.5em;
 }
 
+.location_img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
 img {
   display: block;
   border: 0;
   width: 100%;
+  height: auto;
+  max-width: 300px;
   height: auto;
 }
 
@@ -52,7 +61,4 @@ img {
   justify-content: space-between;
 }
 
-img {
-  max-width: 200px;
-  height: auto;
-}
+

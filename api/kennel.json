@@ -3,5 +3,18 @@
         { "id": 1, "name": "Doodles", "breed": "Poodle"},
         { "id": 2, "name": "Decker", "breed": "German Shepherd" },
         { "id": 3, "name": "Esme", "breed": "Pitbull" }
+    ],
+    "locations": [
+        {"id": 1, "name": "Uptown", "city": "Central City"},
+        {"id": 2, "name": "Downtown", "city": "Star City"}
+    ],
+    "employees": [
+        {"id": 1, "name": "Bill Limbergh", "position": "Manager"},
+        {"id": 2, "name": "Betty Boop", "position": "Human Resources"}
+        {"id": 3, "name": "Milton Waddams", "position": "Stapler"},
+        {"id": 4, "name": "Large Marge", "position": "Security Chief"}
+    ],
+    "owners": [
+        {"id": 1, "name": "Sam Jackson", "phoneNumber": "(555)1234-567"}
     ]
 }

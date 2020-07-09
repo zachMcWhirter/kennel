@@ -27,13 +27,13 @@ const ApplicationViews = () => {
       <Route
         path="/locations"
         render={props => {
-            return <EmployeeCard />;
+            return <LocationCard />;
         }}
       />
       <Route
         path="/employees"
         render={props => {
-            return <LocationCard />;
+            return <EmployeeCard />;
         }}
       />
       <Route
