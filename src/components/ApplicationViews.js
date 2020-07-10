@@ -6,7 +6,6 @@ import AnimalList from "./animal/AnimalList";
 import LocationList from "./location/LocationList";
 import EmployeeList from "./employee/EmployeeList";
 import OwnerList from "./owner/OwnerList";
-import AnimalCard from "./animal/AnimalCard";
 import AnimalDetail from "./animal/AnimalDetail";
 
 const ApplicationViews = () => {

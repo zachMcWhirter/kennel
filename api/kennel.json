@@ -2,18 +2,21 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
+      "name": "Charlotte",
+      "breed": "Beagle",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg"
     },
     {
       "id": 2,
       "name": "Decker",
-      "breed": "German Shepherd"
+      "breed": "German Shepherd",
+      "image": "https://thehappypuppysite.com/wp-content/uploads/2018/12/German-Shepherd-Dog-Breed-Information-Center-HP-long.jpg"
     },
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Pitbull"
+      "breed": "Great Pyranees",
+      "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg"
     }
   ],
   "locations": [
@@ -54,7 +57,12 @@
     {
       "id": 1,
       "name": "Sam Jackson",
-      "phoneNumber": "(555)1234-567"
-    }
+      "phoneNumber": "(555)123-4567"
+    },
+    {
+        "id": 2,
+        "name": "Star Lord",
+        "phoneNumber": "(555)987-6543"
+      }
   ]
 }
