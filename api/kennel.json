@@ -2,7 +2,7 @@
   "animals": [
     {
       "id": 1,
-      "name": "Charlotte",
+      "name": "charlotte",
       "breed": "Beagle",
       "image": "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg"
     },
@@ -15,8 +15,14 @@
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Great Pyranees",
+      "breed": "Great Pyrenees",
       "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg"
+    },
+    {
+      "name": "tom ",
+      "breed": "cat",
+      "image": "https://ichef.bbci.co.uk/news/400/cpsprodpb/17428/production/_110827259_tomandjerry.jpg",
+      "id": 4
     }
   ],
   "locations": [
@@ -60,9 +66,9 @@
       "phoneNumber": "(555)123-4567"
     },
     {
-        "id": 2,
-        "name": "Star Lord",
-        "phoneNumber": "(555)987-6543"
-      }
+      "id": 2,
+      "name": "Star Lord",
+      "phoneNumber": "(555)987-6543"
+    }
   ]
 }
