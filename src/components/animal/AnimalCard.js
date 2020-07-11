@@ -1,8 +1,6 @@
 import React from "react";
 import "./Animal.css"
 import { Link } from "react-router-dom";
-import {firstLetterCase} from '../../modules/helpers'
-// firstLetterCase will capitolize the first letter of the word for you
 
 
 const AnimalCard = props => {

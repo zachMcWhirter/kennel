@@ -40,6 +40,7 @@ fieldset label {
 }
 fieldset input:focus + label {
     color: #933;
+    
 }
 
 fieldset .formgrid {

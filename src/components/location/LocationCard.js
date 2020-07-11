@@ -6,12 +6,12 @@ const LocationCard = props => {
         <div className="card">
             <div className="card-content">
                 <picture>
-                    <img className="location_img"src={require("./location.jpg")} alt="Worker" />
+                    <img className="location_img"src={(props.location.image)} alt="Worker" />
                 </picture>
                 <h3>
-                    Name: <span className="card-locationName">{props.location.name}</span>
-                </h3>
+                    Name: <span className="card-locationName">{props.location.name}</span></h3>
                 <p>City: {props.location.city}</p>
+                <button className="delete" type="button" onClick={() => props.deleteLocation(props.location.id)}>Close Location</button>
             </div>
         </div>    
     );

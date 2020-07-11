@@ -19,18 +19,6 @@
       "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg"
     },
     {
-      "name": "Tom ",
-      "breed": "cat",
-      "image": "https://ichef.bbci.co.uk/news/400/cpsprodpb/17428/production/_110827259_tomandjerry.jpg",
-      "id": 4
-    },
-    {
-      "name": "Bingo",
-      "breed": "Pug",
-      "image": "https://vignette.wikia.nocookie.net/disney/images/8/84/5ae9675f6554160a79be9f68.png/revision/latest/top-crop/width/360/height/450?cb=20200127230658",
-      "id": 5
-    },
-    {
       "name": "Rolly",
       "breed": "Pug",
       "image": "https://smedia.webcollage.net/rlfp/wc/live/module/flairuk/_cp/products/1535554745778/tab-e8de888c-96ad-4a47-9269-565d2bc1d684/e419f641-af94-420f-8bc2-df6fb52dfeef.jpg.w480.jpg",
@@ -46,11 +34,13 @@
   "locations": [
     {
       "id": 1,
+      "image": "https://athomeinhollywood.com/wp-content/uploads/2015/06/Dog-Hotel-for-Sale-by-Denise-Richards.jpg",
       "name": "Uptown",
       "city": "Central City"
     },
     {
       "id": 2,
+      "image": "https://metropolisjapan.com/wp-content/uploads/2018/06/Wancott-playing-with-dogs.jpg",
       "name": "Downtown",
       "city": "Star City"
     }
@@ -89,9 +79,9 @@
       "phoneNumber": "(555)987-6543"
     },
     {
-        "id": 3,
-        "name": "Harry Dresden",
-        "phoneNumber": "(111)987-6543"
-      }
+      "id": 3,
+      "name": "Harry Dresden",
+      "phoneNumber": "(111)987-6543"
+    }
   ]
 }

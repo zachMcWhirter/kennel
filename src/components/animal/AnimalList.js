@@ -47,8 +47,6 @@ const AnimalList = (props) => {
             </div>
         </>
     );
-
-
 };
 
 export default AnimalList
