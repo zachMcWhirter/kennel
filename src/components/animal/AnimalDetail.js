@@ -36,7 +36,7 @@ const AnimalDetail = props => {
         <div className="card">
             <div className="card-content">
                 <picture>
-                    <img src={require(animal.image)} alt="My Dog" />
+                    <img src={(animal.image)} alt="My Dog" />
                 </picture>
                 <h3>Name: <span style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>
                 <p>Breed: {animal.breed}</p>

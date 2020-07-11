@@ -2,7 +2,7 @@
   "animals": [
     {
       "id": 1,
-      "name": "charlotte",
+      "name": "Charlotte",
       "breed": "Beagle",
       "image": "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg"
     },
@@ -19,10 +19,28 @@
       "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg"
     },
     {
-      "name": "tom ",
+      "name": "Tom ",
       "breed": "cat",
       "image": "https://ichef.bbci.co.uk/news/400/cpsprodpb/17428/production/_110827259_tomandjerry.jpg",
       "id": 4
+    },
+    {
+      "name": "Bingo",
+      "breed": "Pug",
+      "image": "https://vignette.wikia.nocookie.net/disney/images/8/84/5ae9675f6554160a79be9f68.png/revision/latest/top-crop/width/360/height/450?cb=20200127230658",
+      "id": 5
+    },
+    {
+      "name": "Rolly",
+      "breed": "Pug",
+      "image": "https://smedia.webcollage.net/rlfp/wc/live/module/flairuk/_cp/products/1535554745778/tab-e8de888c-96ad-4a47-9269-565d2bc1d684/e419f641-af94-420f-8bc2-df6fb52dfeef.jpg.w480.jpg",
+      "id": 6
+    },
+    {
+      "name": "Logan",
+      "breed": "Wolverine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC7shuDllnZx8qlhYUN0s60RycY0FLP2qiMA&usqp=CAU",
+      "id": 7
     }
   ],
   "locations": [
@@ -69,6 +87,11 @@
       "id": 2,
       "name": "Star Lord",
       "phoneNumber": "(555)987-6543"
-    }
+    },
+    {
+        "id": 3,
+        "name": "Harry Dresden",
+        "phoneNumber": "(111)987-6543"
+      }
   ]
 }
