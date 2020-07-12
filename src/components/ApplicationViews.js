@@ -2,12 +2,14 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
-//only include these once they are built - previous practice exercise
-import LocationList from "./location/LocationList";
-import EmployeeList from "./employee/EmployeeList";
-import OwnerList from "./owner/OwnerList";
 import AnimalDetail from "./animal/AnimalDetail";
 import AnimalForm from './animal/AnimalForm'
+import LocationList from "./location/LocationList";
+import LocationDetail from "./location/LocationDetail"
+import EmployeeList from "./employee/EmployeeList";
+import OwnerList from "./owner/OwnerList";
+
+
 
 const ApplicationViews = () => {
   return (
@@ -37,11 +39,17 @@ const ApplicationViews = () => {
             {...props} />
       }} />
       <Route
-        path="/locations"
-        render={props => {
-          return <LocationList />;
+        exact path="/locations"
+        render={(props) => {
+          return <LocationList 
+          {...props} />;
         }}
       />
+      <Route
+        path="/locations/:locationId(\d+)"
+        render={(props) => {
+          return <LocationDetail locationId={parseInt(props.match.params.locationId)} />
+        }} />
       <Route
         path="/employees"
         render={props => {
