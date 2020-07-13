@@ -7,7 +7,7 @@ const LocationForm = (props) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFieldChange = evt => {
-        const stateToChange = {...location};
+        const stateToChange = { ...location };
         stateToChange[evt.target.id] = evt.target.value;
         setLocation(stateToChange);
     };

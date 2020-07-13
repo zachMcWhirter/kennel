@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+
+// This will be the component that handles user login. If a user does not login with email and password, they should not have access to the info on the app.
+
 const Login = props => {
     const [credentials, setCredentials] = useState({ email: "", password: "" });
 
@@ -15,13 +18,13 @@ const Login = props => {
 
         // For now, just store the email and password that
         // the customer enters into session storage.
-        // ...Let's just trust the user... That's a good idea, right????
         sessionStorage.setItem(
             "credentials",
             JSON.stringify(credentials)
         );
         props.history.push("/animals")
     }
+
     return (
         <form onSubmit={handleLogin}>
             <fieldset>
