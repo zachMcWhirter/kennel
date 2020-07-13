@@ -5,7 +5,7 @@ import LocationCard from './LocationCard';
 
 //This module will initiate the LocationManager getAll() call, hold on to the returned data, and then render the <LocationCard /> component for each Location.
 
-const LocationList = () => {
+const LocationList = (props) => {
     // The initial state is an empty array
     const [locations, setLocations] = useState([]);
 
@@ -29,7 +29,14 @@ const LocationList = () => {
 
     // Finally we use map() to "loop over" the locations array to show a list of location cards
     return (
-        <>
+        <>  
+            <section className="section-content">
+                <button type="button"
+                    className="btn"
+                    onClick={() => {props.history.push("/locations/new")}}>
+                    Add Location
+                </button>
+            </section>
             <div className="container-cards">
                 {locations.map(location => 
                     <LocationCard 

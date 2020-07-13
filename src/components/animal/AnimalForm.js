@@ -68,4 +68,4 @@ const AnimalForm = props => {
   );
 };
 
-export default AnimalForm
+export default AnimalForm;

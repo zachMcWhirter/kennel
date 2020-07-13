@@ -29,6 +29,12 @@
       "breed": "Wolverine",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC7shuDllnZx8qlhYUN0s60RycY0FLP2qiMA&usqp=CAU",
       "id": 7
+    },
+    {
+      "name": "Cujo",
+      "breed": "Saint Bernard",
+      "image": "https://2.bp.blogspot.com/-f4QvOrinVm0/V63BBv5q-zI/AAAAAAAACac/PgWyA4rPwr4TQ7FFHYmL4uG5Bhbr7K5UwCLcB/w1200-h630-p-k-no-nu/cujo1983.jpg",
+      "id": 8
     }
   ],
   "locations": [
@@ -45,11 +51,17 @@
       "city": "Star City"
     },
     {
-        "id": 3,
-        "image": "https://athomeinhollywood.com/wp-content/uploads/2015/06/Dog-Hotel-for-Sale-by-Denise-Richards.jpg",
-        "name": "Uptown",
-        "city": "Central City"
-      }
+      "name": "Midtown",
+      "city": "Gotham",
+      "image": "https://www.prague-stay.com/images/full_image/1920x1200/prague%20vip%20pets%20main-resize~vip-pets-5-star-pet-hotel-school.jpg",
+      "id": 3
+    },
+    {
+      "name": "The Ranch",
+      "city": "Tumbleweed",
+      "image": "https://houstondogranch.com/wp-content/uploads/2018/08/Houston-Dog-Ranch-Dog-Daycare-Boarding-Training-Houston-Texas-0002-1-1024x682.jpg",
+      "id": 4
+    }
   ],
   "employees": [
     {
