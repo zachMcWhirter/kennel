@@ -26,6 +26,15 @@ const AnimalForm = props => {
     }
   };
 
+
+
+
+
+
+
+
+
+  
   return (
     <>
       <form>

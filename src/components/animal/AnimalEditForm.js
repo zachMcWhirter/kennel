@@ -3,7 +3,7 @@ import AnimalManager from "../../modules/AnimalManager";
 import "./AnimalForm.css";
 
 const AnimalEditForm = props => {
-    const [animal, setAnimal] = useState({ name: "", breed: "" });
+    const [animal, setAnimal] = useState({ name: "", breed: "", image: "" });
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFieldChange = evt => {
@@ -20,7 +20,8 @@ const AnimalEditForm = props => {
         const editedAnimal = {
             id: props.match.params.animalId,
             name: animal.name,
-            breed: animal.breed
+            breed: animal.breed,
+            image: animal.image
         };
         
         AnimalManager.update(editedAnimal)
@@ -59,6 +60,13 @@ const AnimalEditForm = props => {
               value={animal.breed}
             />
             <label htmlFor="breed">Breed</label>
+            <input 
+                type="text"
+                required
+                onChange={handleFieldChange}
+                id="image"
+                placeholder="url"/>
+            <label htmlFor="image">Image</label>
           </div>
           <div className="alignRight">
             <button
