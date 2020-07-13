@@ -3,14 +3,15 @@ import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
 import AnimalDetail from "./animal/AnimalDetail";
-import AnimalForm from './animal/AnimalForm'
+import AnimalForm from './animal/AnimalForm';
+import AnimalEditForm from "./animal/AnimalEditForm";
 import LocationList from "./location/LocationList";
-import LocationDetail from "./location/LocationDetail"
-import LocationForm from './location/LocationForm'
+import LocationDetail from "./location/LocationDetail";
+import LocationForm from './location/LocationForm';
+import LocationEditForm from "./location/LocationEditForm";
 import EmployeeList from "./employee/EmployeeList";
 import OwnerList from "./owner/OwnerList";
-import Login from "./auth/Login"
-import AnimalEditForm from "./animal/AnimalEditForm";
+import Login from "./auth/Login";
 
 const ApplicationViews = () => {
 
@@ -67,7 +68,7 @@ const ApplicationViews = () => {
         }}
       />
       <Route
-        path="/locations/:locationId(\d+)"
+        exact path="/locations/:locationId(\d+)"
         render={props => {
           return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props} />
         }} />
@@ -77,6 +78,14 @@ const ApplicationViews = () => {
           return <LocationForm
           {...props} />
         }} />
+      <Route path="/locations/:locationId(\d+)/edit" 
+        render={props => {
+          if (isAuthenticated()) {
+            return <LocationEditForm {...props} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} />  
       <Route
         exact path="/employees"
         render={props => {
