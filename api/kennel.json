@@ -43,7 +43,13 @@
       "image": "https://metropolisjapan.com/wp-content/uploads/2018/06/Wancott-playing-with-dogs.jpg",
       "name": "Downtown",
       "city": "Star City"
-    }
+    },
+    {
+        "id": 3,
+        "image": "https://athomeinhollywood.com/wp-content/uploads/2015/06/Dog-Hotel-for-Sale-by-Denise-Richards.jpg",
+        "name": "Uptown",
+        "city": "Central City"
+      }
   ],
   "employees": [
     {

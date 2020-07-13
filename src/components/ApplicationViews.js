@@ -48,7 +48,7 @@ const ApplicationViews = () => {
       <Route
         path="/locations/:locationId(\d+)"
         render={props => {
-          return <LocationDetail locationId={parseInt(props.match.params.locationId)} />
+          return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props} />
         }} />
       <Route
         path="/employees"

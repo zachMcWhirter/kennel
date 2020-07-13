@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
 import './AnimalDetail.css'
+import ApplicationViews from '../ApplicationViews';
 
 const AnimalDetail = props => {
     const [animal, setAnimal] = useState({ name: "", breed: "", image: "" });
@@ -29,6 +30,7 @@ const AnimalDetail = props => {
         setIsLoading(true);
         AnimalManager.delete(props.animalId).then(() =>
           props.history.push("/animals")
+        //   Do not forget to update ApplicationViews.js to include {...props} st the end of the AnimalDetail route path
         );
       };
 

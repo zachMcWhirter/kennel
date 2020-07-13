@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from "react";
 import LocationManager from "../../modules/LocationManager";
 import "./LocationDetail.css"
-import AnimalManager from "../../modules/AnimalManager";
+
 
 const LocationDetail = props => {
     const [location, setLocation] = useState({name: "",city: "", image: "" });
@@ -21,11 +21,11 @@ const LocationDetail = props => {
     }, [props.locationId]);
 
     const handleDelete = () => {
+         //invoke the delete function in LocationManger and re-direct to the animal list.
         setIsLoading(true);
-        LocationManager.delete(props.locationId)
-        .then(() => {
-            props.history.push("/locations");
-        });
+        LocationManager.delete(props.locationId).then(() => 
+            props.history.push("/locations")
+        );
     };
 
     return (
