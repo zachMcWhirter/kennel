@@ -65,7 +65,8 @@ const AnimalEditForm = props => {
                 required
                 onChange={handleFieldChange}
                 id="image"
-                placeholder="url"/>
+                value={animal.image}
+                />
             <label htmlFor="image">Image</label>
           </div>
           <div className="alignRight">

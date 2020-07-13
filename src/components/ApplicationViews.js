@@ -73,20 +73,28 @@ const ApplicationViews = () => {
         }} />
       <Route
         path="/locations/new"
-        render={(props) => {
+        render={props => {
           return <LocationForm
           {...props} />
         }} />
       <Route
-        path="/employees"
+        exact path="/employees"
         render={props => {
-          return <EmployeeList />;
+          if (isAuthenticated()) {
+          return <EmployeeList { ...props } /> 
+          } else {
+            return <Redirect to="/login" />
+          }
         }}
       />
       <Route
-        path="/owners"
+        exact path="/owners"
         render={props => {
-          return <OwnerList />;
+          if (isAuthenticated) {
+          return <OwnerList { ...props } />
+          } else {
+            return <Redirect to="/login" />
+          }
         }}
       />
     </React.Fragment>
