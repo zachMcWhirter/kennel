@@ -26,9 +26,7 @@ const ApplicationViews = () => {
         }}
       />
       <Route 
-      path="/login" 
-      component={Login}
-      />
+        path="/login" component={Login} />
       <Route
         exact path="/animals"
         render={props => {

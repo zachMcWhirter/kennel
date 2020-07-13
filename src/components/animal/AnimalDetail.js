@@ -33,6 +33,8 @@ const AnimalDetail = props => {
         );
       };
 
+    //   *** write if/else statement here to solve Challenge: No Animal ID in API in chap 10 *** 
+    
     return (
         // this is where we use JSX to tell the browser what an animal detail card will look like. And return it
         <div className="card">
