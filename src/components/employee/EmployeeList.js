@@ -25,6 +25,8 @@ const EmployeeList = () => {
         .then(() => EmployeeManager.getAll().then(setEmployees));
     };
 
+    
+
     // Finally we use map() to "loop over" the employees array to show a list of employee cards
     return (
         <div className="container-cards">

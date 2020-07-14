@@ -46,6 +46,7 @@ const ApplicationViews = () => {
       <Route
         exact path="/animals/:animalId(\d+)"
         render={props => {
+          // Pass the animalId to the AnimalDetailComponent
           return <AnimalDetail animalId={parseInt(props.match.params.animalId)} {...props} />
         }} 
       />
@@ -129,7 +130,12 @@ const ApplicationViews = () => {
       <Route 
         path="/employees/:employeeId(\d+)" 
         render={(props) => {
-          return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)} />
+          return (
+            <EmployeeDetail 
+              employeeId={parseInt(props.match.params.employeeId)} 
+                { ...props } 
+            />
+          );
         }}
       />
 
