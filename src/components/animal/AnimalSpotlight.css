@@ -1,15 +1,27 @@
 .animal-spotlight {
+    background-color: cornflowerblue;
     max-width: 400px;
     display: flex;
-    border: 1px dashed gray;
+    border: 1px groove gray;
     padding: 10px;
   }
   
   .animal-spotlight img {
     width: 200px;
     margin-right: 20px;
+    border-radius: 10px;
+    
   }
   
   .animal-spotlight p {
     color: black;
+  }
+
+  .reloadButton {
+      background-color: darkblue;
+      color: white;
+  }
+
+  h3 {
+      text-shadow: 1px 1px 0px white;
   }

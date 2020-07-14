@@ -21,7 +21,7 @@ const Home = () => {
         500 Puppy Way
       </address>
       <h1>Animal Spotlight</h1>
-      <button onClick={refreshSpotlightAnimal}>Reload &#x27f3;</button>
+      <button class="reloadButton" onClick={refreshSpotlightAnimal}>Reload &#x27f3;</button>
       {
         spotlightId && <AnimalSpotlight animalId={spotlightId} />
       }
