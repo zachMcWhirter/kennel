@@ -61,28 +61,44 @@
       "city": "Nashville",
       "image": "https://houstondogranch.com/wp-content/uploads/2018/08/Houston-Dog-Ranch-Dog-Daycare-Boarding-Training-Houston-Texas-0002-1-1024x682.jpg",
       "id": 4
+    },
+    {
+      "name": "Soho Grand",
+      "city": "New York",
+      "image": "https://d3rg18dos0rgue.cloudfront.net/wp-content/uploads/2019/08/dog-park-soho-nyc.jpg",
+      "id": 5
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Bill Limbergh",
-      "job": "Manager"
+      "job": "Manager",
+      "image": "https://cdn.shopify.com/s/files/1/1974/0397/products/5664_bill_lumbergh_office_space_grande.jpg?v=1571439558"
     },
     {
       "id": 2,
-      "name": "Betty Boop",
-      "job": "Human Resources"
+      "name": "Dana Scully",
+      "job": "Human Resources",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFH2KkbFvxVbZ-x5chLlw2TqVXayltDrDbwQ&usqp=CAU"
     },
     {
       "id": 3,
-      "name": "Milton Waddams",
-      "job": "Stapler"
+      "name": "Chubbs Peterson",
+      "job": "Head Dog Trainer",
+      "image": "https://pbs.twimg.com/media/DwD1pAaVAAEY2NV.jpg"
     },
     {
       "id": 4,
-      "name": "Large Marge",
-      "job": "Security Chief"
+      "name": "Helpful Hannah",
+      "job": "Customer Service",
+      "image": "https://www.topdraw.com/assets/uploads/2011/02/Customer-Service-Girl.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Doc Holiday",
+      "job": "Security Chief",
+      "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-tombstone-val-kilmer.jpg"
     }
   ],
   "owners": [

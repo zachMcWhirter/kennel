@@ -6,7 +6,7 @@ const EmployeeCard = props => {
         <div className="card">
             <div className="card-content">
                 <picture>
-                    <img src={require("./worker.jpg")} alt="Worker" />
+                    <img src={(props.employee.image)} alt="Worker" />
                 </picture>
                 <h3>
                     Name: <span className="card-employeeName">{props.employee.name}</span>
