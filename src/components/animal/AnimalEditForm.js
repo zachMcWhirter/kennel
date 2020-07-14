@@ -3,7 +3,11 @@ import AnimalManager from "../../modules/AnimalManager";
 import "./AnimalForm.css";
 
 const AnimalEditForm = props => {
-    const [animal, setAnimal] = useState({ name: "", breed: "", image: "" });
+    const [animal, setAnimal] = useState({ 
+      name: "", 
+      breed: "", 
+      image: "" });
+      
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFieldChange = evt => {
