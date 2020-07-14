@@ -1,5 +1,6 @@
 import React from "react";
 import "./Employee.css"
+import { Link } from "react-router-dom";
 
 const EmployeeCard = props => {
     return (
@@ -9,12 +10,15 @@ const EmployeeCard = props => {
                     <img src={(props.employee.image)} alt="Worker" />
                 </picture>
                 <h3>
-                    Name: <span className="card-employeeName">{props.employee.name}</span>
+                    <span className="card-employeeName">{props.employee.name}</span>
                 </h3>
-                <p>Job: {props.employee.job}</p>
+                <p> {props.employee.job}</p>
                 <button className="delete" type="button" 
                     onClick={() => props.deleteEmployee(props.employee.id)}>Fire Employee
                 </button>
+                <Link to={`/employees/${props.employee.id}`}>
+                    <button>Details</button>
+                </Link>
             </div>
         </div>
     );

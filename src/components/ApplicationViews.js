@@ -10,6 +10,7 @@ import LocationDetail from "./location/LocationDetail";
 import LocationForm from './location/LocationForm';
 import LocationEditForm from "./location/LocationEditForm";
 import EmployeeList from "./employee/EmployeeList";
+import EmployeeDetail from "./employee/EmployeeDetail";
 import OwnerList from "./owner/OwnerList";
 import Login from "./auth/Login";
 
@@ -24,11 +25,13 @@ const ApplicationViews = () => {
       <Route
         exact path="/"
         render={props => {
-          return <Home />;
+          return <Home />
         }}
       />
+
       <Route 
         path="/login" component={Login} />
+
       <Route
         exact path="/animals"
         render={props => {
@@ -37,26 +40,35 @@ const ApplicationViews = () => {
           } else {
             return <Redirect to="/login" />
           }
-        }} />
+        }} 
+      />
+
       <Route
         exact path="/animals/:animalId(\d+)"
         render={props => {
           return <AnimalDetail animalId={parseInt(props.match.params.animalId)} {...props} />
-        }} />
+        }} 
+      />
+
       <Route 
         exact path="/animals/new"
         render={(props) => {
           return <AnimalForm 
-            {...props} />
-      }} />
+          {...props} />
+        }} 
+      />
+
       <Route 
-        path="/animals/:animalId(\d+)/edit" render={props => {
-        if (isAuthenticated()) {
-          return <AnimalEditForm {...props} />
-        } else {
-          return <Redirect to="/login" />
-        }
-      }} />  
+        path="/animals/:animalId(\d+)/edit" 
+        render={props => {
+          if (isAuthenticated()) {
+            return <AnimalEditForm {...props} />
+          } else {
+            return <Redirect to="/login" />
+          }
+        }} 
+      /> 
+
       <Route
         exact path="/locations"
         render={(props) => {
@@ -67,17 +79,32 @@ const ApplicationViews = () => {
           }
         }}
       />
+
       <Route
         exact path="/locations/:locationId(\d+)"
         render={props => {
           return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props} />
-        }} />
+        }} 
+      />
+      {/*
+        This is a new route to handle a URL with the following pattern:
+        http://localhost:3000/animals/1
+
+        It will not handle the following URL because the `(\d+)`
+        matches only numbers after the final slash in the URL
+        http://localhost:3000/animals/jack
+      */
+      }
+
+
       <Route
         path="/locations/new"
         render={props => {
           return <LocationForm
           {...props} />
-        }} />
+        }} 
+      />
+
       <Route path="/locations/:locationId(\d+)/edit" 
         render={props => {
           if (isAuthenticated()) {
@@ -85,7 +112,9 @@ const ApplicationViews = () => {
           } else {
             return <Redirect to="/login" />
           }
-        }} />  
+        }} 
+      />  
+
       <Route
         exact path="/employees"
         render={props => {
@@ -96,6 +125,14 @@ const ApplicationViews = () => {
           }
         }}
       />
+
+      <Route 
+        path="/employees/:employeeId(\d+)" 
+        render={(props) => {
+          return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)} />
+        }}
+      />
+
       <Route
         exact path="/owners"
         render={props => {

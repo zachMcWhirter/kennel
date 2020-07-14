@@ -4,12 +4,13 @@
     display: flex;
     border: 1px groove gray;
     padding: 10px;
+    border-radius: 10px;
+
   }
   
   .animal-spotlight img {
-    width: 200px;
+    width: 300px;
     margin-right: 20px;
-    border-radius: 10px;
     
   }
   

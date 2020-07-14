@@ -3,7 +3,10 @@ import AnimalManager from '../../modules/AnimalManager';
 import './AnimalDetail.css'
 
 const AnimalDetail = props => {
-    const [animal, setAnimal] = useState({ name: "", breed: "", image: "" });
+    const [animal, setAnimal] = useState({ 
+        name: "", 
+        breed: "", 
+        image: "" });
 
     const [isLoading, setIsLoading] = useState(true);
     //   isLoading is a boolean value that will indicate whether or not the component is loading. A value of true should disable the button and a value of false should enable it. By putting isLoading in the component's state, we can trigger a re-render by changing its value.
