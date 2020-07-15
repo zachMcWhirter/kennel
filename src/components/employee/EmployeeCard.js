@@ -16,6 +16,10 @@ const EmployeeCard = props => {
                 <button className="delete" type="button"
                     onClick={() => props.deleteEmployee(props.employee.id)}>Fire Employee
                 </button>
+                <button type="button"
+                    onClick={() => props.history.push(`/employees/${props.employee.id}/edit`)}>
+                    Edit
+                </button>
                 <Link to={`/employees/${props.employee.id}`}>
                     <button>Details</button>
                 </Link>

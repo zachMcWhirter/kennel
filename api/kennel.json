@@ -32,7 +32,7 @@
     },
     {
       "id": 8,
-      "name": "Cujo 4",
+      "name": "Cujo 5",
       "breed": "Saint Bernard",
       "image": "https://2.bp.blogspot.com/-f4QvOrinVm0/V63BBv5q-zI/AAAAAAAACac/PgWyA4rPwr4TQ7FFHYmL4uG5Bhbr7K5UwCLcB/w1200-h630-p-k-no-nu/cujo1983.jpg"
     }
@@ -63,16 +63,16 @@
       "id": 4
     },
     {
+      "id": 5,
       "name": "Soho Grand",
-      "city": "New York",
-      "image": "https://d3rg18dos0rgue.cloudfront.net/wp-content/uploads/2019/08/dog-park-soho-nyc.jpg",
-      "id": 5
+      "city": "New York City",
+      "image": "https://d3rg18dos0rgue.cloudfront.net/wp-content/uploads/2019/08/dog-park-soho-nyc.jpg"
     }
   ],
   "employees": [
     {
       "id": 1,
-      "name": "Bill Limbergh",
+      "name": "Bill Lumbergh",
       "job": "Manager",
       "image": "https://cdn.shopify.com/s/files/1/1974/0397/products/5664_bill_lumbergh_office_space_grande.jpg?v=1571439558"
     },
