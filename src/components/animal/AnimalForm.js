@@ -5,7 +5,8 @@ import './AnimalForm.css'
 const AnimalForm = props => {
     const [animal, setAnimal] = useState({ 
       name: "", 
-      breed: ""});
+      breed: ""
+    });
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFieldChange = evt => {

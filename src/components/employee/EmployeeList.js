@@ -4,7 +4,7 @@ import EmployeeCard from './EmployeeCard';
 
 //This module will initiate the EmployeeManager getAll() call, hold on to the returned data, and then render the <EmployeeCard /> component for each Employee.
 
-const EmployeeList = () => {
+const EmployeeList = (props) => {
     const [employees, setEmployees] = useState([]);
 
     const getEmployees = () => {
@@ -22,20 +22,29 @@ const EmployeeList = () => {
 
     const deleteEmployee = id => {
         EmployeeManager.delete(id)
-        .then(() => EmployeeManager.getAll().then(setEmployees));
+            .then(() => EmployeeManager.getAll().then(setEmployees));
     };
 
-    
+
 
     // Finally we use map() to "loop over" the employees array to show a list of employee cards
     return (
-        <div className="container-cards">
-            {employees.map(employee => 
-                <EmployeeCard 
-                    key={employee.id} 
-                    employee={employee}
-                    deleteEmployee={deleteEmployee}/>)}
-        </div>
+        <>
+            <section className="section-content">
+                <button type="button"
+                    className="btn"
+                    onClick={() => { props.history.push("/employees/new") }}>
+                    Hire New Employee
+                </button>
+            </section>
+            <div className="container-cards">
+                {employees.map(employee =>
+                    <EmployeeCard
+                        key={employee.id}
+                        employee={employee}
+                        deleteEmployee={deleteEmployee} />)}
+            </div>
+        </>
     );
 };
 

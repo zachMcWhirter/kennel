@@ -45,3 +45,9 @@
   .card button:hover {
     background-color: darkblue;
   }
+
+  .btn {
+    background-color: cornflowerblue;
+    color: darkblue;
+    border-radius: 5px;
+  }

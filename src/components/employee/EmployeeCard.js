@@ -6,14 +6,6 @@ const EmployeeCard = props => {
     return (
         <div className="card">
             <div className="card-content">
-                <section className="section-content">
-                    <button type="button"
-                        className="btn"
-                        onClick={() => 
-                        { props.history.push("/employees/new") }}>
-                        Hire New Employee
-                    </button>
-                </section>
                 <picture>
                     <img src={(props.employee.image)} alt="Worker" />
                 </picture>
