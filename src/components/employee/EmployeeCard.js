@@ -6,6 +6,14 @@ const EmployeeCard = props => {
     return (
         <div className="card">
             <div className="card-content">
+                <section className="section-content">
+                    <button type="button"
+                        className="btn"
+                        onClick={() => 
+                        { props.history.push("/employees/new") }}>
+                        Hire New Employee
+                    </button>
+                </section>
                 <picture>
                     <img src={(props.employee.image)} alt="Worker" />
                 </picture>
@@ -13,7 +21,7 @@ const EmployeeCard = props => {
                     <span className="card-employeeName">{props.employee.name}</span>
                 </h3>
                 <p> {props.employee.job}</p>
-                <button className="delete" type="button" 
+                <button className="delete" type="button"
                     onClick={() => props.deleteEmployee(props.employee.id)}>Fire Employee
                 </button>
                 <Link to={`/employees/${props.employee.id}`}>

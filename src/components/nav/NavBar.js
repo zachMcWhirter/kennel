@@ -19,22 +19,22 @@ const NavBar = () => {
           </li>
           <li>
             <Link className="nav-link" to="/animals">
-              Animals
+              Our Guests
             </Link>
           </li>
           <li>
             <Link className="nav-link" to="/locations">
-              Locations
+              Our Locations
             </Link>
           </li>
           <li>
             <Link className="nav-link" to="/employees">
-              Employees
+              Our Staff
             </Link>
           </li>
           <li>
             <Link className="nav-link" to="/owners">
-              Owners
+              Pet Owners
             </Link>  
           </li>
         </ul>
