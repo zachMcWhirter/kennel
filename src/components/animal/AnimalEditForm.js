@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import AnimalManager from "../../modules/AnimalManager";
 import "./AnimalForm.css";
+import EmployeeManager from "../../modules/EmployeeManager";
 
 const AnimalEditForm = props => {
     const [animal, setAnimal] = useState({ 
       name: "", 
       breed: "", 
-      image: "" });
-      
+      image: "",
+      employeeId: ""
+    });
+
     const [isLoading, setIsLoading] = useState(false);
+    const [employees, setEmployees] = useState([]);
 
     const handleFieldChange = evt => {
         const stateToChange = { ...animal };
@@ -25,20 +29,25 @@ const AnimalEditForm = props => {
             id: props.match.params.animalId,
             name: animal.name,
             breed: animal.breed,
-            image: animal.image
+            image: animal.image,
+            employeeId: parseInt(animal.employeeId)
         };
         
         AnimalManager.update(editedAnimal)
         .then(() => props.history.push("/animals")) 
     }
     
-    useEffect(() => {
+      useEffect(() => {
         AnimalManager.get(props.match.params.animalId)
-        .then(animal => {
-            setAnimal(animal);
-            setIsLoading(false);
-        });
-    }, []);
+          .then(animal => {
+            EmployeeManager.getAll()
+            .then(employees => {
+              setEmployees(employees)
+              setAnimal(animal);
+              setIsLoading(false);
+            })
+      });
+  } , [props.match.params.animalId]);
 
     return (
     <>
@@ -72,7 +81,20 @@ const AnimalEditForm = props => {
                 value={animal.image}
                 />
             <label htmlFor="image">Image</label>
+            <select
+              className="form-control"
+              id="employeeId"
+              value={animal.employeeId}
+              onChange={handleFieldChange}
+            >
+              {employees.map(employee =>
+                <option key={employee.id} value={employee.id}>
+                  {employee.name}</option>
+              )}
+            </select>
+            <label htmlFor="employeeId">Employee</label>
           </div>
+          
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}
