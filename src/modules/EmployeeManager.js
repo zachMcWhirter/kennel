@@ -8,7 +8,12 @@ export default {
         return fetch(`${remoteURL}/employees/${id}`).then(result => result.json())
     },
     getAll() {
-        return fetch(`${remoteURL}/employees`).then(result => result.json())
+        return fetch(`${remoteURL}/employees/`).then(result => result.json())
+    },
+    // API call that will get all employees with animals
+    getWithAnimals(id) {
+      return fetch(`${remoteURL}/employees/${id}?_embed=animals`)
+              .then(result => result.json())
     },
     delete(id) {
         return fetch(`${remoteURL}/employees/${id}`, {
@@ -16,7 +21,7 @@ export default {
         }).then(result => result.json())
     },
     post(newEmployee) {
-      return fetch(`${remoteURL}/employees`, {
+      return fetch(`${remoteURL}/employees/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
