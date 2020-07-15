@@ -4,37 +4,43 @@
       "id": 1,
       "name": "Charlotte",
       "breed": "Beagle",
-      "image": "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg"
+      "image": "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg",
+      "employeeId": 6
     },
     {
       "id": 2,
       "name": "Decker",
       "breed": "German Shepherd",
-      "image": "https://thehappypuppysite.com/wp-content/uploads/2018/12/German-Shepherd-Dog-Breed-Information-Center-HP-long.jpg"
+      "image": "https://thehappypuppysite.com/wp-content/uploads/2018/12/German-Shepherd-Dog-Breed-Information-Center-HP-long.jpg",
+      "employeeId": 6
     },
     {
       "id": 3,
       "name": "Ghost",
       "breed": "Great Pyrenees",
-      "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg"
+      "image": "https://petmd.com/sites/default/files/breedopedia/Toes-es%20'n%20%20Nose-es%20'n%20Eyes-es%20'n%20Ears-es.jpg",
+      "employeeId": 7
     },
     {
       "name": "Rolly",
       "breed": "Pug",
       "image": "https://smedia.webcollage.net/rlfp/wc/live/module/flairuk/_cp/products/1535554745778/tab-e8de888c-96ad-4a47-9269-565d2bc1d684/e419f641-af94-420f-8bc2-df6fb52dfeef.jpg.w480.jpg",
-      "id": 6
+      "id": 6,
+      "employeeId": 7
     },
     {
       "name": "Logan",
       "breed": "Wolverine",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC7shuDllnZx8qlhYUN0s60RycY0FLP2qiMA&usqp=CAU",
-      "id": 7
+      "id": 7,
+      "employeeId": 8
     },
     {
       "id": 8,
       "name": "Cujo 5",
       "breed": "Saint Bernard",
-      "image": "https://2.bp.blogspot.com/-f4QvOrinVm0/V63BBv5q-zI/AAAAAAAACac/PgWyA4rPwr4TQ7FFHYmL4uG5Bhbr7K5UwCLcB/w1200-h630-p-k-no-nu/cujo1983.jpg"
+      "image": "https://2.bp.blogspot.com/-f4QvOrinVm0/V63BBv5q-zI/AAAAAAAACac/PgWyA4rPwr4TQ7FFHYmL4uG5Bhbr7K5UwCLcB/w1200-h630-p-k-no-nu/cujo1983.jpg",
+      "employeeId": 8
     }
   ],
   "locations": [
@@ -75,6 +81,7 @@
       "name": "Bill Lumbergh",
       "job": "Manager",
       "image": "https://cdn.shopify.com/s/files/1/1974/0397/products/5664_bill_lumbergh_office_space_grande.jpg?v=1571439558"
+
     },
     {
       "id": 2,
@@ -85,7 +92,7 @@
     {
       "id": 3,
       "name": "Chubbs Peterson",
-      "job": "Head Dog Trainer",
+      "job": "Head Trainer",
       "image": "https://pbs.twimg.com/media/DwD1pAaVAAEY2NV.jpg"
     },
     {
@@ -96,9 +103,27 @@
     },
     {
       "id": 5,
-      "name": "Doc Holiday",
+      "name": "The Chad",
       "job": "Security Chief",
-      "image": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-tombstone-val-kilmer.jpg"
+      "image": "https://media-exp1.licdn.com/dms/image/C4E03AQFvNVA0Kv6Yqw/profile-displayphoto-shrink_800_800/0?e=1600300800&v=beta&t=wx8bIHWx3TolasCK9K_dyT0CxJJo3-o2gI1rls9AWhc"
+    },
+    {
+    "id": 6,
+    "name": "Sisi Meow",
+    "job": "Pet Care",
+    "image": "https://media-exp1.licdn.com/dms/image/C5603AQEgnScypnI44w/profile-displayphoto-shrink_800_800/0?e=1600300800&v=beta&t=7wcK4ZyC5eJy_hpk0z-pOytfOMzNxP7e8FtgPK5UGIc"
+    },
+    {
+      "id": 7,
+      "name": "Kelley Caregiver",
+      "job": "Pet Care",
+      "image": "https://media-exp1.licdn.com/dms/image/C4E03AQHGXXZQaehDCQ/profile-displayphoto-shrink_800_800/0?e=1600300800&v=beta&t=XfEq1gPXPvbKGPvtJXObj7n1dpFzWkRYYwSBNS4ZT6o"
+    },
+    {
+      "id": 8,
+      "name": "Big Rob",
+      "job": "Pet Care",
+      "image": "https://media-exp1.licdn.com/dms/image/C5603AQEff1srcHXQ1g/profile-displayphoto-shrink_800_800/0?e=1600300800&v=beta&t=fD5bCLRcyrkTcmgrSsyfKnO82weS2dOqHuQI9GDlUSw"
     }
   ],
   "owners": [
