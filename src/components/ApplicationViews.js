@@ -25,6 +25,8 @@ const ApplicationViews = () => {
 
   return (
     <React.Fragment>
+
+      {/* (chap 2) - exact is needed on the first route, otherwise it will also match the other two routes */}
       <Route
         exact path="/"
         render={props => {

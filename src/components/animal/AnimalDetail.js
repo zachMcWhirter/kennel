@@ -31,15 +31,16 @@ const AnimalDetail = props => {
         //invoke the delete function in AnimalManger and re-direct to the animal list.
         setIsLoading(true);
         AnimalManager.delete(props.animalId).then(() =>
+        //   props.history.push("/animals") takes you back to the main animals page (AnimalList) and loads the remaining animals after deleting the animalId you selected.
           props.history.push("/animals")
-        //   Do not forget to update ApplicationViews.js to include {...props} st the end of the AnimalDetail route path
+        //   Do not forget to update ApplicationViews.js to include {...props} at the end of the AnimalDetail route path
         );
       };
 
     //   *** write if/else statement here to solve Challenge: No Animal ID in API in chap 10 *** 
     
     return (
-        // this is where we use JSX to tell the browser what an animal detail card will look like. And return it
+        // this is where we use JSX to tell the browser what an AnimalDetail card will look like. And return it
         <div className="card">
             <div className="card-content">
                 <picture>

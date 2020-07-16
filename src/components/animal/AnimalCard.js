@@ -2,6 +2,7 @@ import React from "react";
 import "./Animal.css"
 import { Link } from "react-router-dom";
 
+// (chap 1) - The job of this component is to display an animal card. The code below defines what a single animal card should look like.
 
 const AnimalCard = props => {
     return (

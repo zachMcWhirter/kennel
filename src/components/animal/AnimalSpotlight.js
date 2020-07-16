@@ -4,7 +4,10 @@ import "./AnimalSpotlight.css";
 
 
 const AnimalSpotlight = props => {
-    const [animal, setAnimal] = useState({ name: "", breed: "" });
+    const [animal, setAnimal] = useState({
+      name: "", 
+      breed: "" 
+    });
   
     useEffect(() => {
       AnimalManager.get(props.animalId).then(animal => {
@@ -25,6 +28,6 @@ const AnimalSpotlight = props => {
         </div>
       </div>
     );
-  };
+};
                                      
 export default AnimalSpotlight;

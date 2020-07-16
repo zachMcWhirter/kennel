@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
+
+// (Chap 2) - Create links in your navigation bar for /locations, /employees, and /owners paths.
 const NavBar = () => {
   return (
     <header>

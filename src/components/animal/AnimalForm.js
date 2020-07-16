@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
 import './AnimalForm.css'
 
+// Below is a new route that renders a form for boarding a new animal. You need to update the route for /animals to include the ...props argument and pass it to the child component. This sets up the ability to use the helpful history.push() mechanism in the components themselves to change the URL in the browser. 
+
 const AnimalForm = props => {
     const [animal, setAnimal] = useState({ 
       name: "", 
