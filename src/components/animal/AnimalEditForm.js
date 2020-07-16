@@ -81,6 +81,8 @@ const AnimalEditForm = props => {
                 value={animal.image}
                 />
             <label htmlFor="image">Image</label>
+
+            {/* (chap 13) */}
             <select
               className="form-control"
               id="employeeId"

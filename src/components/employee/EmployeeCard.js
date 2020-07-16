@@ -20,6 +20,8 @@ const EmployeeCard = props => {
                     onClick={() => props.history.push(`/employees/${props.employee.id}/edit`)}>
                     Edit
                 </button>
+
+                {/* (chap 13) - add a button to the <EmployeeCard> for details using history.push of react-router-dom. */}
                 <button type="button"
                     onClick={() => { props.history.push(`/employees/${props.employee.id}/details`) }}>Pets I Care For
                 </button>

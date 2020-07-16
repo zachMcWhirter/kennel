@@ -10,7 +10,7 @@ export default {
     getAll() {
         return fetch(`${remoteURL}/employees/`).then(result => result.json())
     },
-    // API call that will get all employees with animals
+    // (chap 13) - API call that will get all employees with animals
     getWithAnimals(id) {
       return fetch(`${remoteURL}/employees/${id}?_embed=animals`)
               .then(result => result.json())

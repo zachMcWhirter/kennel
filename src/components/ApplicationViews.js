@@ -167,6 +167,8 @@ const ApplicationViews = () => {
         }} 
       />
 
+
+      {/* (chap 13) - Add a route to <ApplicationViews> to handle displaying details of a single employee. This route will return a new component: <EmployeeWithAnimals> which we will build next. Notice that we are passing {...props} to enable access to react-router-dom properties. Be sure to import EmployeesWithAnimals into ApplicationViews */}
       <Route 
         path="/employees/:employeeId(\d+)/details"
         render={(props) => {
